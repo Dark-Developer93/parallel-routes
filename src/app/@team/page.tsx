@@ -3,7 +3,7 @@ import Link from "next/link";
 // Simulating a delay and potential error for demonstration
 async function getTeamData(shouldError = false) {
   // Simulate loading delay
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 2000));
 
   if (shouldError) {
     throw new Error("Failed to load team data");
